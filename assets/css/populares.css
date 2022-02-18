@@ -1,0 +1,81 @@
+.populares {
+    padding: 3rem 2rem;
+}
+
+.populares__conteudo {
+    display: flex;
+    flex-wrap: wrap; /* Quebrar os cards quando não couber */
+    grid-area: conteudo;
+    padding: 1rem 0rem;
+}
+
+.populares__card {
+    background: #fdfdfd;
+    display: grid;
+    grid-template-areas: /* Duas linhas */
+        "card-imagem"
+        "card-corpo";
+    grid-template-columns: 100%; /* Tamanho da coluna */
+    
+    grid-template-rows: 173px auto; /* Como temos duas linhas ^^ a primeira é 173px e a segunda é auto */
+    
+    margin-right: 1rem; /* Espaçamento entre os cards */
+    
+    width: calc(20% - 1rem); /* Irá oculpar os 20% e tirar 1rem */
+}
+
+.populares__card:last-child {
+    margin-right: 0;
+}
+
+.populares__card___imagem {
+    grid-area: card-imagem;
+    height: 100%;
+    width: 100%;
+}
+
+.populares__card___corpo {
+    display: grid;
+    grid-area: card-corpo;
+    grid-row-gap: .5rem;
+    grid-template-areas:
+        "card-cabecalho"
+        "card-conteudo";
+    grid-template-rows: 50px auto; /* Linha do cabeçalho / Linha do conteúdo */
+    padding: .75rem;
+}
+
+.populares__card___titulo {
+    color: #333333;
+    font-size: 1.5rem;
+}
+
+.populares__card___data {
+    color: #808080;
+    font-size: .9rem;
+}
+
+.populares__card___descricao {
+    color: #333333;
+    text-align: justify; /* Deixando o texto inteiro alinhado */
+}
+
+.populares__titulo {
+    font-weight: 500;
+}
+
+.populares__icone {
+    margin-right: .25rem;
+}
+
+.populares__cabecalho {
+    border-bottom: 1px solid #dcdcdc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.populares__botao {
+    background: transparent;
+    border: none;
+    color: #333333;
+}
