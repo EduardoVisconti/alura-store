@@ -7,20 +7,26 @@
         "conteudo"
         "rodape";
     grid-template-columns: auto;
-    grid-template-rows: 50px 100vh  auto; 
+    grid-template-rows: 50px auto auto; 
 }
 
 .cabecalho {
-    background: #00cc99;
+    align-items: center;
+    display: flex; /* Posicionar e alinhar ao centro mais facil */
     grid-area: cabecalho;
+    padding: 0 2rem;
 }
  
 .conteudo {
-    background: #ff8080;
     grid-area: conteudo;
+    padding: 0 2rem; /* Espaçamento no menu e no populares */
 }
 
 .rodape {
-    background: #0099ff;
+    background: #fdfdfd;
+    color: #333333;
+    font-size: .8rem;
     grid-area: rodape;
+    padding: 1rem;
+    text-align: center;
 }
