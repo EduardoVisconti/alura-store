@@ -15,13 +15,13 @@
     grid-template-areas: /* Duas linhas */
         "card-imagem"
         "card-corpo";
-    grid-template-columns: 100%; /* Tamanho da coluna */
+    grid-template-columns: 100%; /* Tamanho da coluna.
     
-    grid-template-rows: 173px auto; /* Como temos duas linhas ^^ a primeira é 173px e a segunda é auto */
+    grid-template-rows: 173px auto; > Como temos duas linhas ^^ a primeira é 173px e a segunda é auto.
     
-    margin-right: 1rem; /* Espaçamento entre os cards */
+    margin-right: 1rem; > Espaçamento entre os cards.
     
-    width: calc(20% - 1rem); /* Irá oculpar os 20% e tirar 1rem */
+    width: calc(20% - 1rem); > Irá oculpar os 20% e tirar 1rem */
 }
 
 .populares__card:last-child {
